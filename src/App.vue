@@ -1,23 +1,52 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+
+    <Nav></Nav>
+    <List></List>
+    <Content></Content>
+
+
+
+
+    <!--以下为原始内容，注释-->
+    <!--<img src="./assets/logo.png">
+    
+    <div>
+      <router-link to="/">Go to Home</router-link>
+    </div>
+    
+    <div>
+      <router-link to="/foo">Go to foo</router-link>
+    </div>
+    <div>
+      <router-link to="/bar/myparam">Go to bar with para</router-link>
+    </div>
+
+    <router-view></router-view>-->
+    
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav';
+import List from '@/components/List';
+import Content from '@/components/Content';
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {Nav, List, Content},
 }
 </script>
 
-<style>
+<style lang="less">
+@import './less/index';
+html,body,#app{
+  height:100%;
+  background: #fff;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
