@@ -3,7 +3,7 @@
 
     <Nav></Nav>
     <List></List>
-    <Content></Content>
+    <Content name="from parent app"></Content>
 
 
 

@@ -4,17 +4,32 @@
       <router-link to="/">NOTE BOOK LOGO</router-link>
     </div>
     <div class="list">
+      <button @click="toggle">Toggle</button>
+      <transition name="fade">
+        <ul v-if="show">
+          <li>111111</li>
+          <li>222222</li>
+        </ul>
+      </transition>
       
-      <ul>
-        <li>111111</li>
-        <li>222222</li>
-      </ul>
     </div>
   </div>
 </template>
 <script>
 export default {
-  
+  data: function(){
+    return {
+      show: true
+    }
+  },
+  methods: {
+    toggle: function(){
+      this.show = !this.show;
+    }
+  }
+  // data(){
+  //   show: true
+  // } 
 }
 </script>
 <style lang="less">
@@ -35,6 +50,15 @@ export default {
         display: block;
         margin-left:auto;
         margin-right:auto;
+      }
+    }
+
+    .list{
+      .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s
+      }
+      .fade-enter, .fade-leave-active {
+        opacity: 0
       }
     }
   }
