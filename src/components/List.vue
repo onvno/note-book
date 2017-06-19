@@ -1,6 +1,8 @@
 <template>
   <div id="list">
     List
+    <router-link to="/list/second">second</router-link>
+    <router-view></router-view>
   </div>
 </template>
 

@@ -7,11 +7,12 @@
       <button @click="toggle">Toggle</button>
       <transition name="fade">
         <ul v-if="show">
-          <li>111111</li>
+          <li>
+            <router-link to='/list'>111111</router-link>
+          </li>
           <li>222222</li>
         </ul>
       </transition>
-      
     </div>
   </div>
 </template>
