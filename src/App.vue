@@ -2,7 +2,7 @@
   <div id="app">
 
     <Nav></Nav>
-    <List></List>
+    <Latest></Latest>
     <Content name="from parent app"></Content>
 
 
@@ -30,11 +30,12 @@
 <script>
 import Nav from '@/components/Nav';
 import List from '@/components/List';
+import Latest from '@/components/Latest';
 import Content from '@/components/Content';
 
 export default {
   name: 'app',
-  components: {Nav, List, Content},
+  components: {Nav, List, Content, Latest},
 }
 </script>
 

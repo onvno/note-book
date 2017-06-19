@@ -5,7 +5,7 @@ import Foo from '@/components/Foo'
 import Bar from '@/components/Bar'
 import Second from '@/components/Second'
 import List from '@/components/List'
-
+import Latest from '@/components/Latest'
 
 Vue.use(Router)
 
@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Latest',
+      component: Latest
     },{
       path: '/list',
       name: 'LIST',

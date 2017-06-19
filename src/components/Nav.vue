@@ -8,9 +8,17 @@
       <transition name="fade">
         <ul v-if="show">
           <li>
-            <router-link to='/list'>111111</router-link>
+            <router-link to='/list'>
+              <span>J</span>
+              <b>Javascript</b>
+            </router-link>
           </li>
-          <li>222222</li>
+          <li>
+            <router-link to='/list'>
+              <span>N</span>
+              <b>Node</b>
+            </router-link>
+          </li>
         </ul>
       </transition>
     </div>
@@ -60,6 +68,26 @@ export default {
       }
       .fade-enter, .fade-leave-active {
         opacity: 0
+      }
+      li{
+        padding:0 20rem/100;
+      }
+      a{
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        margin:10rem/100 0;
+        b{
+          color: #9C9C9C;
+          margin-left:10rem/100;
+        }
+        span{
+          width:46rem/100;
+          height:46rem/100;
+          background:#A5A5A5;
+          color:#fff;
+          line-height:46rem/100;
+        }
       }
     }
   }
