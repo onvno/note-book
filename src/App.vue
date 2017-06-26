@@ -1,9 +1,9 @@
 <template>
   <div id="app">
 
-    <Nav></Nav>
+    <NoteNav></NoteNav>
     <Latest></Latest>
-    <Content name="from parent app"></Content>
+    <NoteContent name="from parent app"></NoteContent>
 
 
 
@@ -28,14 +28,14 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav';
+import NoteNav from '@/components/NoteNav';
 import List from '@/components/List';
 import Latest from '@/components/Latest';
-import Content from '@/components/Content';
+import NoteContent from '@/components/NoteContent';
 
 export default {
   name: 'app',
-  components: {Nav, List, Content, Latest},
+  components: {NoteNav, List, NoteContent, Latest},
 }
 </script>
 
